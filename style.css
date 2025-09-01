@@ -11,7 +11,6 @@ body {
   background: #f4f6f8;
 }
 
-/* Judul gallery */
 h1 {
   font-size: 28px;
   color: #2c3e50;
@@ -72,7 +71,33 @@ h1 {
   .gallery .image { width: 100%; padding: 4px; }
 }
 
-/* Preview box */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10; 
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .prev, .next {
+    padding: 8px;
+    font-size: 14px;
+    display: block;
+  }
+}
+
 .preview-box {
   position: fixed;
   inset: 0;
@@ -127,8 +152,7 @@ h1 {
   object-fit: contain;
   border-radius: 4px;
 }
-
-/* Prev & Next */
+  
 #prevBtn, #nextBtn {
   background: #007bff;
   color: #fff;
@@ -148,3 +172,4 @@ h1 {
 #prevBtn:active, #nextBtn:active {
   transform: scale(0.95);
 }
+
