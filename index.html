@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CodeAlpha - Gallery</title>
+  <title>Gallery Image</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-    <h1 class="gallery title">Image Gallery</h1>
+  <h1 class="gallery title">Image Gallery</h1>
+
   <div class="wrapper">
     <div class="gallery">
       <div class="image"><span><img src="img/apel.png" alt="apel"></span></div>
@@ -21,6 +22,7 @@
       <div class="image"><span><img src="img/tiger4.png" alt="harimau"></span></div>
     </div>
   </div>
+
   <div class="preview-box" aria-hidden="true">
     <div class="preview-card" role="dialog" aria-modal="true">
       <div class="details">
@@ -31,11 +33,9 @@
       </div>
 
       <div class="img-box">
-            <button id="prevBtn">Prev</button>
-            <img id="galleryImage" src="img/apel.png" alt="Gallery">
-            <button id="nextBtn">Next</button>
-          </div>
-          
+        <button id="prevBtn">❮ Prev</button>
+        <img id="galleryImage" src="img/apel.png" alt="Gallery">
+        <button id="nextBtn">Next ❯</button>
       </div>
     </div>
   </div>
